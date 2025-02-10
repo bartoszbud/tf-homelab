@@ -7,6 +7,7 @@ variable "lxc_instances" {
     password    = string
     lxc_cores   = number
     lxc_memory  = number
+    nameservers = string
     lxc_ip      = string
   }))
 }
@@ -39,7 +40,11 @@ variable "lxc_cores" {
 variable "lxc_memory" {
   description = "The amount of memory to assign to the LXC container"
   type        = number
-  
+}
+
+variable "nameservers" {
+  description = "List of nameservers to use for the LXC container"
+  type        = list(string)
 }
 
 variable "lxc_ip" {

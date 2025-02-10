@@ -6,7 +6,7 @@ rev_proxy_instances = {
     password    = "password"
     lxc_cores   = 1
     lxc_memory  = 512
-    nameservers = ["10.0.0.4", "10.0.0.5"]
+    nameservers = "10.0.0.4, 10.0.0.5"
     lxc_ip      = "10.0.0.8"
   }
   "rp2" = {
@@ -16,7 +16,7 @@ rev_proxy_instances = {
     password    = "password"
     lxc_cores   = 1
     lxc_memory  = 512
-    nameservers = ["10.0.0.4", "10.0.0.5"]
+    nameservers = "10.0.0.4, 10.0.0.5"
     lxc_ip      = "10.0.0.9"
   }
 }

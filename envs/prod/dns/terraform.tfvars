@@ -6,8 +6,8 @@ dns_instances = {
     password    = "password"
     lxc_cores   = 1
     lxc_memory  = 512
-    nameservers = ["1.1.1.1", "8.8.8.8"]
-    lxc_ip      = "10.0.0.4"
+    nameservers = "1.1.1.1, 8.8.8.8"
+    lxc_ip      = "10.0.0.112"
   }
   "dns2" = {
     target_node = "pve1"
@@ -16,7 +16,7 @@ dns_instances = {
     password    = "password"
     lxc_cores   = 1
     lxc_memory  = 512
-    nameservers = ["1.1.1.1", "8.8.8.8"]
-    lxc_ip      = "10.0.0.5"
+    nameservers = "1.1.1.1, 8.8.8.8"
+    lxc_ip      = "10.0.0.115"
   }
 }

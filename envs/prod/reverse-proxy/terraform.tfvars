@@ -1,22 +1,26 @@
 rev_proxy_instances = {
   "rp1" = {
-    target_node = "pve1"
-    hostname    = "p-rp1"
-    ostemplate  = "local:vztmpl/debian-10-standard_10.6-1_amd64.tar.gz"
+    target_node = "pve2"
+    vmid        = 0
+    hostname    = "tf-rp1"
+    ostemplate  = "local:vztmpl/almalinux-9-cloud_20250211_amd64.tar.xz"
     password    = "password"
     lxc_cores   = 1
     lxc_memory  = 512
     nameservers = "10.0.0.4, 10.0.0.5"
-    lxc_ip      = "10.0.0.8"
+    lxc_ip      = "10.0.0.15"
+    gw          = "10.0.0.1"
   }
   "rp2" = {
-    target_node = "pve1"
-    hostname    = "p-rp2"
-    ostemplate  = "local:vztmpl/debian-10-standard_10.6-1_amd64.tar.gz"
+    target_node = "pve2"
+    vmid        = 0
+    hostname    = "tf-rp2"
+    ostemplate  = "local:vztmpl/almalinux-9-cloud_20250211_amd64.tar.xz"
     password    = "password"
     lxc_cores   = 1
     lxc_memory  = 512
     nameservers = "10.0.0.4, 10.0.0.5"
-    lxc_ip      = "10.0.0.9"
+    lxc_ip      = "10.0.0.16"
+    gw          = "10.0.0.1"
   }
 }

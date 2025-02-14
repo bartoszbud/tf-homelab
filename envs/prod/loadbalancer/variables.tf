@@ -2,6 +2,7 @@ variable "lb_instances" {
   description = "Map of Load Balancer instances to create"
   type        = map(object({
     target_node = string
+    vmid        = number
     hostname    = string
     ostemplate  = string
     password    = string
@@ -9,6 +10,7 @@ variable "lb_instances" {
     lxc_memory  = number
     nameservers = string
     lxc_ip      = string
+    gw          = string
   }))
 }
 
